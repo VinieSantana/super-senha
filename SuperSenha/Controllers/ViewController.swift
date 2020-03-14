@@ -24,6 +24,25 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "generatePassword" {
+            if(!swNumbers.isOn && !swCaptitalLetters.isOn && !swLetters.isOn && !swSpecialCharacters.isOn){
+                
+                let alert = UIAlertController(title: "Ação não permitida", message: "Favor marcar pelo menos um dos seletores", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    switch action.style{
+                    case .default:
+                        print("default")
+                        
+                    case .cancel:
+                        print("cancel")
+                        
+                    case .destructive:
+                        print("destructive")
+                        
+                    }}))
+                self.present(alert, animated: true, completion: nil)
+                
+            }else{
+                
             let passwordsViewController = segue.destination as! PasswordViewController
             
             // forma mais segura (usar if let)
@@ -41,6 +60,8 @@ class ViewController: UIViewController {
             
             // forcar encerrar o modo de edicao // remove o foco e libera teclado
             view.endEditing(true)
+                
+            }
         }
     }
 }
