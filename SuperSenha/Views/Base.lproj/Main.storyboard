@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cfB-8F-ekT">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cfB-8F-ekT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,7 +47,7 @@
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="whH-XR-1CM">
-                                <rect key="frame" x="310" y="159.5" width="80" height="30"/>
+                                <rect key="frame" x="310" y="157.5" width="80" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="QwV-s7-73o"/>
                                 </constraints>
@@ -103,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="máx. 16" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-fL-NNC">
-                                <rect key="frame" x="310" y="204" width="80" height="30"/>
+                                <rect key="frame" x="310" y="202" width="80" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="5fG-QE-ENZ"/>
                                 </constraints>
@@ -190,22 +187,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="C@3asd#$SFA" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Yx-ab-eFb">
-                                <rect key="frame" x="16" y="148" width="382" height="628"/>
+                                <rect key="frame" x="16" y="148" width="382" height="604"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b6-fO-8DM">
-                                <rect key="frame" x="261" y="840" width="137" height="30"/>
-                                <state key="normal" title="Dicas de Segurança">
-                                    <color key="titleColor" red="1" green="0.8408964151949927" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="twt-ui-sUX" kind="presentation" id="4Nh-Rs-pzi"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv8-kh-kUW">
-                                <rect key="frame" x="16" y="784" width="382" height="44"/>
+                                <rect key="frame" x="16" y="768" width="382" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ALD-tn-VNH"/>
@@ -217,18 +205,28 @@
                                     <action selector="regeneratePassword:" destination="fc6-W8-ekA" eventType="touchUpInside" id="2hn-Xm-Yne"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b6-fO-8DM">
+                                <rect key="frame" x="261" y="824" width="137" height="30"/>
+                                <state key="normal" title="Dicas de Segurança">
+                                    <color key="titleColor" red="1" green="0.8408964151949927" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="twt-ui-sUX" kind="presentation" id="4Nh-Rs-pzi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.6705882353" green="0.22352941179999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Wri-Ka-UKl" firstAttribute="trailing" secondItem="2b6-fO-8DM" secondAttribute="trailing" constant="16" id="6XR-n2-KHV"/>
+                            <constraint firstItem="Wri-Ka-UKl" firstAttribute="trailing" secondItem="2b6-fO-8DM" secondAttribute="trailing" constant="16" id="Dn9-Md-ymp"/>
+                            <constraint firstItem="2b6-fO-8DM" firstAttribute="top" secondItem="pv8-kh-kUW" secondAttribute="bottom" constant="12" id="EKj-ZP-nlu"/>
                             <constraint firstItem="pv8-kh-kUW" firstAttribute="top" secondItem="3Yx-ab-eFb" secondAttribute="bottom" constant="8" id="HTi-Yf-JLH"/>
-                            <constraint firstItem="2b6-fO-8DM" firstAttribute="bottom" secondItem="Wri-Ka-UKl" secondAttribute="bottom" constant="8" id="Q2A-iM-BC4"/>
+                            <constraint firstItem="Wri-Ka-UKl" firstAttribute="bottom" secondItem="2b6-fO-8DM" secondAttribute="bottom" constant="8" id="PgH-99-pdo"/>
+                            <constraint firstItem="pv8-kh-kUW" firstAttribute="top" secondItem="3Yx-ab-eFb" secondAttribute="bottom" constant="16" id="Pv9-1d-cEt"/>
                             <constraint firstItem="3Yx-ab-eFb" firstAttribute="width" secondItem="pv8-kh-kUW" secondAttribute="width" id="dVb-KG-cUO"/>
                             <constraint firstItem="3Yx-ab-eFb" firstAttribute="top" secondItem="Wri-Ka-UKl" secondAttribute="top" constant="8" id="g7o-Ws-Nrl"/>
                             <constraint firstItem="Wri-Ka-UKl" firstAttribute="trailing" secondItem="pv8-kh-kUW" secondAttribute="trailing" constant="16" id="mf1-NL-B64"/>
                             <constraint firstItem="pv8-kh-kUW" firstAttribute="leading" secondItem="Wri-Ka-UKl" secondAttribute="leading" constant="16" id="oaQ-ba-hLL"/>
                             <constraint firstItem="3Yx-ab-eFb" firstAttribute="centerX" secondItem="pv8-kh-kUW" secondAttribute="centerX" id="wUd-aJ-udn"/>
-                            <constraint firstItem="Wri-Ka-UKl" firstAttribute="bottom" secondItem="pv8-kh-kUW" secondAttribute="bottom" constant="34" id="xaN-iX-kPA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wri-Ka-UKl"/>
                     </view>
@@ -246,19 +244,19 @@
             <objects>
                 <viewController id="twt-ui-sUX" customClass="SecurityTipsViewController" customModule="SuperSenha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Zz-6D-ajL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 dicas para ter uma senha forte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wS-48-lxY">
-                                <rect key="frame" x="79" y="56" width="256" height="21"/>
+                                <rect key="frame" x="79" y="12" width="256" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.6705882353" green="0.22352941179999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OFH-Gx-PYG">
-                                <rect key="frame" x="16" y="89" width="382" height="739"/>
+                                <rect key="frame" x="16" y="45" width="382" height="713"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">1. Escolha senhas faceis de lembrar 
+                                <string key="text">1. Escolha senhas faceis de lembrar 
 Uma senha facil de guardar na memoria evita que o usuario tenha que anota-la em papeis ou arquivos, que podem chegar as maos de pessoas erradas.
 
 2. Nao use palavras reais 
@@ -286,13 +284,13 @@ Esse procedimento evita possíveis fraudes. Ao abrir links suspeitos, o usuário
 Muitos ataques podem ser evitados ao ativar serviços básicos de proteção na internet dos antivírus.
 
 10.  Se você achar que é difícil lembrar-se de várias senhas complexas, considere a instalação de um gerenciadores de senhas 
-Há diversos programas disponíveis que armazenam os dados de maneira segura e ajudam os mais esquecidos.</mutableString>
+Há diversos programas disponíveis que armazenam os dados de maneira segura e ajudam os mais esquecidos.</string>
                                 <color key="textColor" red="0.6705882353" green="0.22352941179999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZz-32-mce">
-                                <rect key="frame" x="350" y="840" width="48" height="30"/>
+                                <rect key="frame" x="350" y="770" width="48" height="30"/>
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" red="0.6705882353" green="0.22352941179999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -305,13 +303,13 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                         <constraints>
                             <constraint firstItem="OFH-Gx-PYG" firstAttribute="top" secondItem="5wS-48-lxY" secondAttribute="bottom" constant="12" id="7g4-Iy-TlX"/>
                             <constraint firstItem="BZz-32-mce" firstAttribute="top" secondItem="OFH-Gx-PYG" secondAttribute="bottom" constant="12" id="9gb-lG-c00"/>
-                            <constraint firstItem="BZz-32-mce" firstAttribute="bottom" secondItem="dGd-Zi-uwq" secondAttribute="bottom" constant="8" id="Kqc-ut-MLj"/>
                             <constraint firstItem="dGd-Zi-uwq" firstAttribute="trailing" secondItem="OFH-Gx-PYG" secondAttribute="trailing" constant="16" id="UwJ-3h-o9R"/>
                             <constraint firstItem="5wS-48-lxY" firstAttribute="centerX" secondItem="dGd-Zi-uwq" secondAttribute="centerX" id="Zbn-Gs-uax"/>
                             <constraint firstItem="OFH-Gx-PYG" firstAttribute="centerX" secondItem="dGd-Zi-uwq" secondAttribute="centerX" id="Zto-Nb-fE0"/>
                             <constraint firstItem="5wS-48-lxY" firstAttribute="top" secondItem="dGd-Zi-uwq" secondAttribute="top" constant="12" id="eRK-bB-tcu"/>
                             <constraint firstItem="OFH-Gx-PYG" firstAttribute="leading" secondItem="dGd-Zi-uwq" secondAttribute="leading" constant="16" id="eyy-PP-af2"/>
-                            <constraint firstItem="dGd-Zi-uwq" firstAttribute="trailing" secondItem="BZz-32-mce" secondAttribute="trailing" constant="16" id="sAZ-E2-Tsn"/>
+                            <constraint firstItem="dGd-Zi-uwq" firstAttribute="bottom" secondItem="BZz-32-mce" secondAttribute="bottom" constant="8" id="lwn-ja-Mwu"/>
+                            <constraint firstItem="dGd-Zi-uwq" firstAttribute="trailing" secondItem="BZz-32-mce" secondAttribute="trailing" constant="16" id="qAM-Li-H7e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dGd-Zi-uwq"/>
                     </view>
